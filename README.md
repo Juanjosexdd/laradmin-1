@@ -7,7 +7,7 @@
 ## Requerimientos
 
 - [Composer](https://getcomposer.org/)
-- [Requerimientos de Laravel 7](https://laravel.com/docs/7/installation#installation)
+- [Requerimientos de Laravel 10](https://laravel.com/docs/10/installation#installation)
 - [Node.js y NPM](https://nodejs.org/es/) (Opcional)
 
 ---
@@ -23,6 +23,17 @@ composer install
 ```
 
 Modificar el archivo **.env** con los datos correspondientes al proyecto, credenciales a la base de datos y envió de correo electrónico (recuperación de contraseña).
+
+## Crea la base de datos
+
+```
+/* Accede a MySQL */
+mysql -h localhost -u root -p
+
+/* Crear la base de datos */
+mysql> create database ecommerce;
+
+```
 
 Migrar a la base de datos los roles y permisos iniciales, así como el **usuario administrador por defecto**.
 
